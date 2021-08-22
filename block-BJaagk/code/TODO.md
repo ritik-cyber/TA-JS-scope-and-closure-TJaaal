@@ -4,6 +4,7 @@
 function percentage(marks, total) {
   return (marks * 100) / total;
 }
+console;
 
 // Your code goes here
 ```
@@ -54,7 +55,7 @@ let five = add(2, 3); // Answer
 five = add; // Answer
 five = five(10, 11); // Answer
 five = function () {
-  return 'Hello';
+  return "Hello";
 }; // Answer
 ```
 
@@ -66,10 +67,10 @@ five = function () {
 
 ```js
 function hello() {
-  console.log('Hello World!');
+  console.log("Hello World!");
 }
 
-hello.user = 'Sam'; // valid or invalid
+hello.user = "Sam"; // valid or invalid
 ```
 
 9. What is higher order function explain with an example.
