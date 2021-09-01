@@ -1,5 +1,11 @@
 1. Create a function by your choice that accepts a callback function.
 
+```js
+function add(n, cb) {
+  return cb(n);
+}
+```
+
 2. Create a function by you choice that returns a function reference.
 
 3. Create a higher order function called `map` that takes two inputs:
@@ -9,7 +15,13 @@
 Have `map` return a new array filled with values that are the result of the 'callback' function on each element of the input array.
 
 ```js
-// Your code goes here
+function map(array, n) {
+  let finalArr = [];
+  for (let arr of array) {
+    finalArr.push(n(arr));
+  }
+  return finalArr;
+}
 
 // Test Your Code
 function multiplyByTwo(n) {
@@ -23,11 +35,11 @@ multiplyByTwo(2); //-> 4
 4. Create a higher-order function called `forEach` taht takes an array and a callback, and runs the callback on each element of the array. `forEach` does not return anything.
 
 ```js
-// Your code goes here
+function forEach(array, cb) {}
 
 // Test Your Code
-let alphabet = '';
-let letters = ['a', 'b', 'c', 'd'];
+let alphabet = "";
+let letters = ["a", "b", "c", "d"];
 forEach(letters, function (char) {
   alphabet += char;
 });
